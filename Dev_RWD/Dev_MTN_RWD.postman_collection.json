@@ -22,8 +22,6 @@
 											"script": {
 												"id": "788fe719-46e7-404b-a627-cbf5259bf48c",
 												"exec": [
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
 													"\r",
 													"console.log(jsonData);\r",
@@ -125,11 +123,7 @@
 											"script": {
 												"id": "725ee594-df1e-4b76-9c65-e5f312ad44dd",
 												"exec": [
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
-													"\r",
-													"console.log(jsonData);\r",
 													"\r",
 													"//checking the payload structure \r",
 													"\r",
@@ -227,11 +221,7 @@
 											"script": {
 												"id": "075114b0-c8ed-455d-950f-3798c2f9638e",
 												"exec": [
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
-													"\r",
-													"console.log(jsonData);\r",
 													"\r",
 													"//checking the payload structure \r",
 													"\r",
@@ -336,11 +326,7 @@
 											"script": {
 												"id": "e1db831d-7ec9-4e57-9e40-0b12b5f21d2b",
 												"exec": [
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
-													"\r",
-													"console.log(jsonData);\r",
 													"\r",
 													"//checking the payload structure \r",
 													"\r",
@@ -440,11 +426,7 @@
 											"script": {
 												"id": "f70e9af2-7e8f-4c4d-9513-211b69b40d57",
 												"exec": [
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
-													"\r",
-													"console.log(jsonData);\r",
 													"\r",
 													"//checking the payload structure \r",
 													"\r",
@@ -545,11 +527,7 @@
 											"script": {
 												"id": "231ae2b5-6b7f-4672-8580-6dd11d1d7457",
 												"exec": [
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
-													"\r",
-													"console.log(jsonData);\r",
 													"\r",
 													"//checking the payload structure \r",
 													"\r",
@@ -647,11 +625,7 @@
 											"script": {
 												"id": "37cc31f5-9d97-4c57-8d1e-b483024df971",
 												"exec": [
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
-													"\r",
-													"console.log(jsonData);\r",
 													"\r",
 													"//checking the payload structure \r",
 													"\r",
@@ -749,11 +723,7 @@
 											"script": {
 												"id": "f362c15c-b0b5-4e95-81c1-06eb306e94a5",
 												"exec": [
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
-													"\r",
-													"console.log(jsonData);\r",
 													"\r",
 													"//checking the payload structure \r",
 													"\r",
@@ -851,11 +821,7 @@
 											"script": {
 												"id": "86f24992-2f4d-4a29-93a3-67823518a701",
 												"exec": [
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
-													"\r",
-													"console.log(jsonData);\r",
 													"\r",
 													"//checking the payload structure \r",
 													"\r",
@@ -989,13 +955,7 @@
 											"script": {
 												"id": "c919100b-4bb3-4415-b79d-00e8da1fa4fb",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
-													"\r",
-													"console.log(jsonData);\r",
-													"\r",
 													"\r",
 													"//checking the payload structure \r",
 													"\r",
@@ -1078,7 +1038,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ns0:withdrawrequest xmlns:ns0=\"http://www.ericsson.com/em/emm/serviceprovider/v1_0/backend/client\">\r\n    <resource>FRI:{{account}}@FISA.bank/SP</resource>\r\n    <accountholderid>ID:{{phone}}/MSISDN</accountholderid>\r\n    <amount>\r\n        <amount>15.02</amount>\r\n        <currency>RWF</currency>\r\n    </amount>\r\n    <transactionid>{{transactionID}}</transactionid>\r\n</ns0:withdrawrequest>",
+											"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ns0:withdrawrequest xmlns:ns0=\"http://www.ericsson.com/em/emm/serviceprovider/v1_0/backend/client\">\r\n    <resource>FRI:{{account}}@FISA.bank/SP</resource>\r\n    <accountholderid>ID:{{phone}}/MSISDN</accountholderid>\r\n    <amount>\r\n        <amount>150.02</amount>\r\n        <currency>RWF</currency>\r\n    </amount>\r\n    <transactionid>{{transactionID}}</transactionid>\r\n</ns0:withdrawrequest>",
 											"options": {
 												"raw": {
 													"language": "xml"
@@ -1108,13 +1068,7 @@
 											"script": {
 												"id": "3834f0ed-de27-44a6-ba66-ec95f31e1024",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
-													"\r",
-													"console.log(jsonData);\r",
-													"\r",
 													"\r",
 													"//checking the payload structure \r",
 													"\r",
@@ -1196,7 +1150,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ns0:withdrawrequest xmlns:ns0=\"http://www.ericsson.com/em/emm/serviceprovider/v1_0/backend/client\">\r\n    <resource>FRI:{{account}}@FISA.bank/SP</resource>\r\n    <accountholderid>ID:{{phone}}/MSISDN</accountholderid>\r\n    <amount>\r\n        <amount>10.02</amount>\r\n        <currency>RWF</currency>\r\n    </amount>\r\n    <transactionid>{{transactionID}}</transactionid>\r\n</ns0:withdrawrequest>",
+											"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ns0:withdrawrequest xmlns:ns0=\"http://www.ericsson.com/em/emm/serviceprovider/v1_0/backend/client\">\r\n    <resource>FRI:{{account}}@FISA.bank/SP</resource>\r\n    <accountholderid>ID:{{phone}}/MSISDN</accountholderid>\r\n    <amount>\r\n        <amount>110.02</amount>\r\n        <currency>RWF</currency>\r\n    </amount>\r\n    <transactionid>{{transactionID}}</transactionid>\r\n</ns0:withdrawrequest>",
 											"options": {
 												"raw": {
 													"language": "xml"
@@ -1226,13 +1180,7 @@
 											"script": {
 												"id": "150bbbdc-aad0-4acf-ae3e-e16cddc1bf63",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
-													"\r",
-													"console.log(jsonData);\r",
-													"\r",
 													"\r",
 													"//checking the payload structure \r",
 													"\r",
@@ -1314,7 +1262,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ns0:withdrawrequest xmlns:ns0=\"http://www.ericsson.com/em/emm/serviceprovider/v1_0/backend/client\">\r\n    <resource>FRI:{{account}}@pushpull.bank/SP</resource>\r\n    <accountholderid>ID:0744454487/MSISDN</accountholderid>\r\n    <amount>\r\n        <amount>1.02</amount>\r\n        <currency>RWF</currency>\r\n    </amount>\r\n    <transactionid>{{transactionID}}</transactionid>\r\n</ns0:withdrawrequest>",
+											"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ns0:withdrawrequest xmlns:ns0=\"http://www.ericsson.com/em/emm/serviceprovider/v1_0/backend/client\">\r\n    <resource>FRI:{{account}}@pushpull.bank/SP</resource>\r\n    <accountholderid>ID:0744454487/MSISDN</accountholderid>\r\n    <amount>\r\n        <amount>100.02</amount>\r\n        <currency>RWF</currency>\r\n    </amount>\r\n    <transactionid>{{transactionID}}</transactionid>\r\n</ns0:withdrawrequest>",
 											"options": {
 												"raw": {
 													"language": "xml"
@@ -1344,13 +1292,9 @@
 											"script": {
 												"id": "85d58028-028c-460a-bb3b-bd66da7b7c69",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
 													"\r",
 													"console.log(jsonData);\r",
-													"\r",
 													"\r",
 													"//checking the payload structure \r",
 													"\r",
@@ -1434,7 +1378,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ns0:withdrawrequest xmlns:ns0=\"http://www.ericsson.com/em/emm/serviceprovider/v1_0/backend/client\">\r\n    <resource>FRI:{{account}}@FISA.bank/SP</resource>\r\n    <accountholderid>ID:{{phone}}/MSISDN</accountholderid>\r\n    <amount>\r\n        <amount>1.01</amount>\r\n        <currency>USD</currency>\r\n    </amount>\r\n    <transactionid>{{transactionID}}</transactionid>\r\n</ns0:withdrawrequest>",
+											"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ns0:withdrawrequest xmlns:ns0=\"http://www.ericsson.com/em/emm/serviceprovider/v1_0/backend/client\">\r\n    <resource>FRI:{{account}}@FISA.bank/SP</resource>\r\n    <accountholderid>ID:{{phone}}/MSISDN</accountholderid>\r\n    <amount>\r\n        <amount>10.01</amount>\r\n        <currency>USD</currency>\r\n    </amount>\r\n    <transactionid>{{transactionID}}</transactionid>\r\n</ns0:withdrawrequest>",
 											"options": {
 												"raw": {
 													"language": "xml"
@@ -1464,13 +1408,7 @@
 											"script": {
 												"id": "60a3f82c-a2d0-4156-a70d-5e1d24a336e1",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
-													"\r",
-													"console.log(jsonData);\r",
-													"\r",
 													"\r",
 													"//checking the payload structure \r",
 													"\r",
@@ -1589,13 +1527,7 @@
 											"script": {
 												"id": "8648cae5-73bf-45c8-b110-77bb790dd464",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
-													"\r",
-													"console.log(jsonData);\r",
-													"\r",
 													"\r",
 													"//checking the payload structure \r",
 													"\r",
@@ -1702,14 +1634,9 @@
 											"script": {
 												"id": "b2e58334-4e5d-44fd-806a-32a748ecf803",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
 													"\r",
-													"console.log(jsonData);\r",
-													"\r",
-													"//checking the payload structure ????\r",
+													"//checking the payload structure \r",
 													"var schema = {\r",
 													"    \"type\":\"object\", \r",
 													"    \"properties\":{\r",
@@ -1817,14 +1744,9 @@
 											"script": {
 												"id": "febbe065-9e3d-4c51-b4c0-1afa289dcc45",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
 													"\r",
-													"console.log(jsonData);\r",
-													"\r",
-													"//checking the payload structure ????\r",
+													"//checking the payload structure \r",
 													"var schema = {\r",
 													"    \"type\":\"object\", \r",
 													"    \"properties\":{\r",
@@ -1934,14 +1856,9 @@
 											"script": {
 												"id": "2393431a-667c-42cc-9c87-0d407b1e6482",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
 													"\r",
-													"console.log(jsonData);\r",
-													"\r",
-													"//checking the payload structure ????\r",
+													"//checking the payload structure\r",
 													"var schema = {\r",
 													"    \"type\":\"object\", \r",
 													"    \"properties\":{\r",
@@ -2052,14 +1969,9 @@
 											"script": {
 												"id": "c1ca61a9-1dc5-4782-b784-87746bf383ae",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
 													"\r",
-													"console.log(jsonData);\r",
-													"\r",
-													"//checking the payload structure ????\r",
+													"//checking the payload structure \r",
 													"var schema = {\r",
 													"    \"type\":\"object\", \r",
 													"    \"properties\":{\r",
@@ -2167,14 +2079,9 @@
 											"script": {
 												"id": "b8428f85-9f1b-48ae-b7c9-8f0b61cc1ec4",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
 													"\r",
-													"console.log(jsonData);\r",
-													"\r",
-													"//checking the payload structure ????\r",
+													"//checking the payload structure \r",
 													"var schema = {\r",
 													"    \"type\":\"object\", \r",
 													"    \"properties\":{\r",
@@ -2283,14 +2190,9 @@
 											"script": {
 												"id": "dbf9f6bc-c5df-40cf-88ab-0b5b529ad065",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
 													"\r",
-													"console.log(jsonData);\r",
-													"\r",
-													"//checking the payload structure ????\r",
+													"//checking the payload structure \r",
 													"var schema = {\r",
 													"    \"type\":\"object\", \r",
 													"    \"properties\":{\r",
@@ -2398,14 +2300,9 @@
 											"script": {
 												"id": "64fcc07d-4854-459d-a1d9-320ada34838a",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
 													"\r",
-													"console.log(jsonData);\r",
-													"\r",
-													"//checking the payload structure ????\r",
+													"//checking the payload structure \r",
 													"var schema = {\r",
 													"    \"type\":\"object\", \r",
 													"    \"properties\":{\r",
@@ -2512,14 +2409,9 @@
 											"script": {
 												"id": "71627c06-ad87-421b-a6c7-cfcab27f550f",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
 													"\r",
-													"console.log(jsonData);\r",
-													"\r",
-													"//checking the payload structure ????\r",
+													"//checking the payload structure \r",
 													"var schema = {\r",
 													"    \"type\":\"object\", \r",
 													"    \"properties\":{\r",
@@ -2627,14 +2519,9 @@
 											"script": {
 												"id": "7cda742b-20ec-4615-b91e-15466676d901",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
 													"\r",
-													"console.log(jsonData);\r",
-													"\r",
-													"//checking the payload structure ????\r",
+													"//checking the payload structure \r",
 													"var schema = {\r",
 													"    \"type\":\"object\", \r",
 													"    \"properties\":{\r",
@@ -2742,14 +2629,9 @@
 											"script": {
 												"id": "82a8059b-ab36-4aed-b803-e4217d68a7b1",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
 													"\r",
-													"console.log(jsonData);\r",
-													"\r",
-													"//checking the payload structure ????\r",
+													"//checking the payload structure \r",
 													"var schema = {\r",
 													"    \"type\":\"object\", \r",
 													"    \"properties\":{\r",
@@ -2857,14 +2739,9 @@
 											"script": {
 												"id": "017cd8ba-c909-45c8-b198-a29de19433ea",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
 													"\r",
-													"console.log(jsonData);\r",
-													"\r",
-													"//checking the payload structure ????\r",
+													"//checking the payload structure \r",
 													"var schema = {\r",
 													"    \"type\":\"object\", \r",
 													"    \"properties\":{\r",
@@ -2968,14 +2845,11 @@
 											"script": {
 												"id": "92e11488-313e-47fc-ab0a-eba880ff4b74",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
 													"\r",
 													"console.log(jsonData);\r",
 													"\r",
-													"//checking the payload structure ????\r",
+													"//checking the payload structure \r",
 													"var schema = {\r",
 													"    \"type\":\"object\", \r",
 													"    \"properties\":{\r",
@@ -3082,13 +2956,7 @@
 											"script": {
 												"id": "3c1375e9-8b62-43b7-a82f-7cedfc21a3f7",
 												"exec": [
-													"//checking the Responde code\r",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });\r",
-													"\r",
 													"var jsonData = xml2Json(responseBody);\r",
-													"\r",
-													"console.log(jsonData);\r",
-													"\r",
 													"\r",
 													"//checking the payload structure \r",
 													"\r",
@@ -3220,11 +3088,7 @@
 											"script": {
 												"id": "d1cefb2d-f3a3-46d3-87dd-ee5897667703",
 												"exec": [
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
-													"",
-													"console.log(jsonData);",
 													"",
 													"//checking the payload structure ",
 													"",
@@ -3346,11 +3210,7 @@
 											"script": {
 												"id": "fd979f53-9104-4afa-9bff-3e292e4e9fc2",
 												"exec": [
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
-													"",
-													"console.log(jsonData);",
 													"",
 													"//checking the payload structure ",
 													"",
@@ -3459,11 +3319,7 @@
 											"script": {
 												"id": "bf4057aa-077c-41ad-8ab3-917419f69c2a",
 												"exec": [
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
-													"",
-													"console.log(jsonData);",
 													"",
 													"//checking the payload structure ",
 													"",
@@ -3572,11 +3428,7 @@
 											"script": {
 												"id": "74336b38-1496-4d0c-a3c9-b02f0b7dcf45",
 												"exec": [
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
-													"",
-													"console.log(jsonData);",
 													"",
 													"//checking the payload structure ",
 													"",
@@ -3709,9 +3561,6 @@
 											"script": {
 												"id": "2f7c9f06-0bf4-4e94-8d79-ba740311d26f",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"//checking the payload structure ",
@@ -3820,9 +3669,6 @@
 											"script": {
 												"id": "6bea531f-9bf4-4fb9-9e8d-1dd39f208be3",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"//checking the payload structure ",
@@ -3939,9 +3785,6 @@
 											"script": {
 												"id": "91632866-622a-40ee-b755-32d4f5df7503",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"//checking the payload structure ",
@@ -4050,9 +3893,6 @@
 											"script": {
 												"id": "851c50af-9d38-4dbb-9932-b8dc1af6a209",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"//checking the payload structure ",
@@ -4160,8 +4000,6 @@
 											"script": {
 												"id": "ab2c53dd-cdb4-469f-b275-492fca1ed4d3",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
 													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
@@ -4270,9 +4108,6 @@
 											"script": {
 												"id": "a09cb065-cc86-49a3-8191-a188497a09c8",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"//checking the payload structure ",
@@ -4380,9 +4215,6 @@
 											"script": {
 												"id": "94c9df1d-e32f-4a78-bcdf-e6051231e786",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"//checking the payload structure ",
@@ -4490,9 +4322,6 @@
 											"script": {
 												"id": "ed28f5dd-7e02-445f-9e90-be4a19bae776",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"//checking the payload structure ",
@@ -4607,9 +4436,6 @@
 											"script": {
 												"id": "da4fb928-2d7d-417e-af9c-deadfaadaa46",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"console.log(jsonData);",
@@ -4730,9 +4556,6 @@
 											"script": {
 												"id": "c1aad5bc-ef30-4cc1-b6f0-1a92525f19b6",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"console.log(jsonData);",
@@ -4852,9 +4675,6 @@
 											"script": {
 												"id": "ba9852b5-c95e-427f-b3c9-731321dd8935",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"console.log(jsonData);",
@@ -4974,9 +4794,6 @@
 											"script": {
 												"id": "bd84d76f-b068-4ca6-9749-b86b41ebc54c",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"console.log(jsonData);",
@@ -5096,12 +4913,7 @@
 											"script": {
 												"id": "30a013ff-8620-4fa8-9f7e-14f1cb8a2d28",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
-													"",
-													"console.log(jsonData);",
 													"",
 													"//checking the payload structure ????",
 													"var schema = {",
@@ -5218,14 +5030,9 @@
 											"script": {
 												"id": "1d5e0d72-14da-468c-833d-7d5b9db496f2",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
-													"console.log(jsonData);",
-													"",
-													"//checking the payload structure ????",
+													"//checking the payload structure ",
 													"var schema = {",
 													"    \"type\":\"object\", ",
 													"    \"properties\":{",
@@ -5341,9 +5148,6 @@
 											"script": {
 												"id": "1452015d-5922-4f49-acc0-26961767c3fd",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"//checking the payload structure ????",
@@ -5459,13 +5263,9 @@
 											"script": {
 												"id": "3021be69-7e98-47bd-9152-0c0f1ab43d72",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"//checking the payload structure ",
-													"//checking the payload structure ????",
 													"var schema = {",
 													"    \"type\":\"object\", ",
 													"    \"properties\":{",
@@ -5581,13 +5381,9 @@
 											"script": {
 												"id": "eb3a282e-f7c7-46ba-8832-2c9cc1424d02",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
-													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"//checking the payload structure ",
-													"//checking the payload structure ????",
 													"var schema = {",
 													"    \"type\":\"object\", ",
 													"    \"properties\":{",
@@ -5703,13 +5499,10 @@
 											"script": {
 												"id": "da4c2852-cc1b-4066-9f54-e683cf96cc17",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
 													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"//checking the payload structure ",
-													"//checking the payload structure ????",
 													"var schema = {",
 													"    \"type\":\"object\", ",
 													"    \"properties\":{",
@@ -5825,13 +5618,10 @@
 											"script": {
 												"id": "a1657dbf-ce71-441a-826e-c7cffd2496d9",
 												"exec": [
-													"//checking the Responde code",
-													"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });",
 													"",
 													"var jsonData = xml2Json(responseBody);",
 													"",
 													"//checking the payload structure ",
-													"//checking the payload structure ????",
 													"var schema = {",
 													"    \"type\":\"object\", ",
 													"    \"properties\":{",
@@ -5951,7 +5741,8 @@
 				"id": "abbb5546-b81a-47a2-9d41-9faf2418431f",
 				"type": "text/javascript",
 				"exec": [
-					""
+					"//checking the Responde code",
+					"pm.test(\"Status code is 200\", function () { pm.response.to.have.status(200); });"
 				]
 			}
 		}
